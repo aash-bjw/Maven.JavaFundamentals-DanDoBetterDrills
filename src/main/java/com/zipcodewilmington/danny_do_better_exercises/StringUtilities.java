@@ -48,7 +48,7 @@ public class StringUtilities {
      */
     public static String getSuffix(String input){
 
-        return null; //input.substring();
+        return input.substring(input.length()-3);
     }
 
     /**
@@ -66,13 +66,12 @@ public class StringUtilities {
      * @param inputValue the value input from user
      * @return the middle character of `inputValue`
      */
-    public static Character getMiddleCharacter(String inputValue){
+     public static Character getMiddleCharacter(String inputValue){
 
-        //find index of middle character
+         int y = 2;
+         Character middle = inputValue.charAt(Math.floorDiv(inputValue.length(), y));
 
-        //use charAt to get the character
-
-        return null;
+         return middle;
     }
 
     /**
