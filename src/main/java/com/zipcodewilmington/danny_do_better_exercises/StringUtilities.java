@@ -8,7 +8,9 @@ public class StringUtilities {
      * @return `Hello World` as a string
      */
     public static String getHelloWorld() {
-        return null;
+
+
+        return "Hello World";
     }
 
     /**
@@ -46,7 +48,7 @@ public class StringUtilities {
      */
     public static String getSuffix(String input){
 
-        return null;
+        return null; //input.substring();
     }
 
     /**
@@ -78,7 +80,9 @@ public class StringUtilities {
      * @return the first sequence of characters
      */
     public static String getFirstWord(String spaceDelimitedString){
-        return null;
+
+        String[] outcome = spaceDelimitedString.split(" ");
+        return outcome[0];
     }
 
     /**
@@ -86,7 +90,9 @@ public class StringUtilities {
      * @return the second word of a string delimited by spaces.
      */
     public static String getSecondWord(String spaceDelimitedString){
-        return null;
+
+        String[] outcome = spaceDelimitedString.split(" ");
+        return outcome[1];
     }
 
     /**
@@ -94,7 +100,12 @@ public class StringUtilities {
      * @return an identical string with characters in reverse order.
      */
     public static String reverse(String stringToReverse) {
+        int leng = stringToReverse.length();
+        String outcome = "";
 
-        return null;
+        for(int i = leng-1; i >= 0; i--) {
+            outcome = outcome + stringToReverse.charAt(i);
+        }
+        return outcome;
     }
 }
